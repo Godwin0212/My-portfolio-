@@ -1,0 +1,451 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  background-color: white;
+  padding: 20px 8%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+}
+
+
+/*Home*/
+
+.hero {
+    min-height: 500px;
+    padding: 60px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: #f5f7ff;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.hero h1 {
+    font-size: 45px;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #e11d48;
+    font-size: 22px;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+.hero-image {
+    margin-left: 40px;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+
+    background-color: #e0e7ff;
+    color: #2563eb;
+
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*About*/
+
+.about {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/*Skills*/
+
+.skills {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills h1 {
+    color: #2563eb;
+    font-size: 32px;
+    text-align: center;
+}
+
+.skill {
+    margin-top: 25px;
+}
+
+.skill p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+
+    background-color: #ddd;
+
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 10px;
+}
+
+.html {
+    width: 50%;
+}
+
+.css {
+    width: 40%;
+}
+
+.javascript {
+    width: 30%;
+}
+
+.excel {
+    width: 40%;
+}
+
+.ai {
+    width: 40%;
+}
+
+.automation {
+    width: 40%;
+}
+
+/*Projects*/
+
+.projects {
+    padding: 60px 8%;
+    background-color: #f5f7ff;
+}
+
+.projects h1 {
+    text-align: center;
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 280px;
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.project-card img {
+    width: 100%;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.project-card h2 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+.project-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+
+    background-color: #e0e7ff;
+    color: #2563eb;
+
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-tech {
+    margin-top: 15px;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.project-button.disabled {
+    background-color: #ddd;
+    color: #666;
+}
+
+/*Contact*/
+
+.contact {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    text-align: center;
+    color: #2563eb;
+    font-size: 32px;
+}
+
+.contact > p {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #1d4ed8;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.contact label {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  /* règles uniquement pour les petits écrans */
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+  .about {
+    margin: 40px 20px;
+    padding: 30px 20px;
+}
+
+.skills {
+    margin: 40px 20px;
+    padding: 30px 20px;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 280px;
+}
+
+.contact {
+    margin: 40px 20px;
+    padding: 30px 20px;
+}
+
+}
+
+
+.hero h1,
+.about h1,
+.skills h1,
+.projects h1,
+.contact h1 {
+    color: #2563eb;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #222;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+.button,
+.contact button {
+    transition: 0.3s;
+}
+
+.button:hover,
+.contact button:hover {
+    transform: translateY(-2px);
+}
+
+  
+section {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
